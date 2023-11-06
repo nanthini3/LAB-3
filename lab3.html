@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lab 3 </title>
+</head>
+<body> 
+    <style>
+
+            body {
+            background: linear-gradient(135deg, #3498db, #f7de21);
+            font-family: 'Arial', sans-serif;
+            animation: colorChange 10s ease-in-out infinite alternate;
+}
+
+            @keyframes colorChange {
+          0% {
+        background: linear-gradient(135deg, #3498db, #f7de21);
+     }
+        100% {
+        background: linear-gradient(135deg, #e74c3c, #9b59b6);
+  }
+}
+
+            table {
+            margin: 0 auto;
+            border-collapse: separate;
+            border-spacing: 5px;
+            width: 100%;
+            max-width: 800px;
+            margin-top: 20px;
+            border: 2px solid #800080; 
+            border-radius: 20px;
+            background-color: #FFF; 
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.4); 
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #800080; 
+            border-radius: 10px;
+        }
+
+        th {
+            background-color: #FFF; 
+            color: #000; 
+            font-weight: bold;
+        }
+
+        td {
+            background-color: #FFF; 
+        }
+
+        tr:nth-child(even) td {
+            background-color: #F0F0F0; 
+        }
+
+        tr:hover {
+            background-color: #FFF; 
+        }
+
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+            height: 170px;
+            border: 3px solid #9a04a5;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+            transform: scale(1.1); 
+            transition: transform 0.3s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.2); 
+        }
+
+        /* Apply creative styles to the .biodata class */
+        th.biodata {
+        background: linear-gradient(135deg, #3498db, #f7de21);
+        color: #FFF;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(231, 76, 60, 0.6);
+        transition: transform 0.3s ease-in-out;
+        position: relative;
+        overflow: hidden;
+        animation: colorChange 10s ease-in-out infinite alternate;
+}
+
+    @keyframes colorChange {
+    0% {
+        background: linear-gradient(135deg, #3498db, #f7de21);
+    }
+    100% {
+        background: linear-gradient(135deg, #e74c3c, #9b59b6);
+    }
+}
+
+
+        th.biodata:hover {
+            animation: moveLeftAndRight 2s linear infinite; 
+        }
+
+        .audio-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        /* Styles for the mute button */
+        #mute-button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            animation: buttonAnimation 1s linear infinite;
+        }
+
+        #mute-button:hover {
+            background-color: #555;
+            animation: none; /* Disable animation on hover */
+        }
+
+        /* Keyframes for the button animation */
+        @keyframes buttonAnimation {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+      </style>
+      </head>
+      <body>
+
+<table>
+    <tr>
+        <th colspan="3" class="biodata"><i><b>BIODATA</i></b></th>
+    </tr>
+    <tr>
+        <td>NAME</td>
+        <td>NANTHINI RAJAGOBAL</td>
+        <td><img src="your_photo.jpg" alt="img" class="img"></src></td>
+    </tr>
+    <tr>
+        <td>DATE OF BIRTH</td>
+        <td colspan="2">19 MAY 2000</td>
+    </tr>
+    <tr>
+        <td>RELIGION</td>
+        <td colspan="2">HINDU</td>
+    </tr>
+    <tr">
+        <td>RACE</td>
+        <td colspan="2">INDIA</td>
+    </tr>
+    <tr>
+        <td rowspan="4">ADDRESS</td>
+        <td>STREET</td>
+        <td>NO 17 JALAN MARKET</td>
+    </tr>
+    <tr>
+        <td>TOWN</td>
+        <td>GURUN</td>
+    </tr>
+    <tr>
+        <td>DISTRICT</td>
+        <td>KUALA MUDA</td>
+    </tr>
+    <tr>
+        <td>STATE</td>
+        <td>KEDAH</td>
+    </tr>
+    <tr>
+        <td rowspan="3">CONTACT</td>
+        <td>MOBILE PHONE</td>
+        <td>0166807690</td>
+    </tr>
+    <tr>
+        <td>SOCIAL MEDIA</td>
+        <td><a href="https://instagram.com/nanthini_rajagobal?igshid=OGQ5ZDc2ODk2ZA">nanthini_rajagobal</a></td>
+    </tr>
+    <tr>
+        <td>WEBSITE</td>
+        <td>www.</td>
+    </tr>
+    <tr>
+        <td>COURSE AND INSTITUTION</td>
+        <td colspan="2">BACHELOR OF COMPUTER SCIENCE (SOFTWARE ENGINEERING) WITH HONOURS</td>
+    </tr>
+    <tr>
+        <td>PROGRAMMING SKILLS</td>
+        <td colspan="2">HTML, SQL, JAVA, SWITCH</td>
+    </tr>
+    <tr>
+        <td>PERSONAL INTEREST</td>
+        <td colspan="2">PLAYING GAME</td>
+    </tr>
+    <tr>
+        <td>FUTURE PLAN IN 2024</td>
+        <td colspan="2">BECOME A PROGRAMMER</td>
+    </tr>
+    <tr>
+        <td>HOBBIES</td>
+        <td colspan="2">PLAYING GAME AND LISTENING SONG</td>
+    </tr>
+    <tr>
+        <td rowspan="2">CUMPUS LIFE</td>
+        <td colspan="2"><li>ENJOY VACATIONS AND TRIPS WITH FRIENDS</li></td>
+</tr>
+<tr>
+    <td colspan="2"><li>CELEBRATED VARIOUS FESTIVAL AND CULTURAL EVENTS</li></td>
+</tr>
+</table>
+<div class="audio-container">
+    <!-- Add an audio element with the song source -->
+    <audio id="audio-player" controls>
+        <source src="gg.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Add a mute/unmute button in the center of the page -->
+    <button id="mute-button">Mute</button>
+</div>
+</div>
+</body>
+</html>
